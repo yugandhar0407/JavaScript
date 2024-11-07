@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- style property -->
+     <input type="text" id="username" placeholder="username" 
+     style="background-color: rgb(182, 182, 203); color:white;font-size:25px;">
+
+     <script>
+        let inputBox = document.getElementById("username");
+        console.log(inputBox.style);
+        console.log(inputBox.style.backgroundColor);
+        inputBox.style.padding = "10px";
+        console.log(inputBox);
+      //  inputBox.style.cssText = "width:200px"; if you add this only this style will appear on the page.
+       inputBox.style.cssText += "width: 200px";
+      console.log(inputBox);
+     </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--
+The prompt() method displays a dialog box that prompts the user to input some text. 
+It returns the user's input as a string. If the user clicks "Cancel," it returns null.
+message (optional): The text to display in the prompt box.
+default (optional): The default value in the input field.
+This code prompts the user to enter their name, and then greets them using that name.
+
+Key Differences:
+alert() is just for showing a message.
+prompt() asks the user for input and returns their response.
+confirm() asks for confirmation and returns true or false based on the user's choice.
+These methods are very basic and often considered intrusive in modern web applications, 
+so they are generally avoided in favor of custom modal dialogs using HTML, CSS, and JavaScript frameworks.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Method</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>JavaScript Prompt</h2>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+</body>
+</html>

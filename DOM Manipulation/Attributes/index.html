@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username">
+
+    <script>
+     /*   let inputBox = document.getElementById("username");
+        console.log(inputBox.attributes);*/
+    </script>
+    <!--getAttribute() method-->
+    <script>
+        let inputBox1 = document.getElementById("username");
+        console.log(inputBox1.getAttribute("placeholder"));
+    </script>
+    <!--setAttribute()-->
+    <script>
+        let inputBox2 = document.getElementById("username");
+        inputBox2.setAttribute("class", "user");
+        console.log(inputBox2);
+    </script>
+    <!--hasAttribute() Method (it will result true or false) -->
+    <script>
+        let inputBox3 = document.getElementById("username");
+        console.log(inputBox3.hasAttribute("class"));
+    </script>
+    <!-- removeAttribute() method-->
+     <script>
+        let inputBox4 = document.getElementById("username");
+        inputBox4.removeAttribute("placeholder");
+        console.log(inputBox4);
+     </script>
+</body>
+</html>

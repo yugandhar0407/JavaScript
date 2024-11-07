@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        background-color: rgb(205, 205, 227);
+        font-size: 12px;
+        color: wheat;
+        width: 300px;
+    }
+</style>
+<body>
+    <!--getComputedStyle()-->
+    <input type="text" id="username" placeholder="username">
+
+    <script>
+        let inputBox = document.getElementById("username");
+        //window.getComputedStyle(element, pseudoElement); syntax
+      // console.log(window.getComputedStyle(inputBox));
+       console.log(window.getComputedStyle(inputBox).width);
+    </script>
+
+    <!--classNameProperty()-->
+
+    <h1 id="title" class="main message">JavaScript Class</h1>
+    
+    <script>
+        let title = document.getElementById("title");
+
+      //  title.className = "new"; change entire class name to "new"
+     // title.className +=  " new"; //concatenate with older classes
+
+        console.log(title);
+
+    </script>
+    <!--classList property (return the collection of class)-->
+    
+    <h2 id="title2" class="main message">ClassList</h2>
+
+    <script>
+        let title1 = document.getElementById("title");
+
+        console.log(title1.classList);
+
+        title1.classList.add("new");
+        console.log(title1);
+   
+
+    </script>
+</body>
+</html>

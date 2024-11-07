@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <p id="message">JavaScript DOM</p>
+        <p id="message">JavaScript</p> <!-- print first element only because id is unique for every element -->
+
+    </div>
+    <script>
+        let msg = document.getElementById("message");
+        console.log(msg);
+    </script>
+
+    <div>
+        <input type="radio" name="language" value="JS">
+        <input type="radio" name="language" value="Python">
+    </div>
+    <script>
+        let btn = document.getElementsByName("language");
+        console.log(btn);
+    </script>
+
+    <div>
+        <h1>first heading</h1>
+        <h1>first heading</h1> <h1>first heading</h1>
+        <h1>first heading</h1>
+        <h1>first heading</h1> <h1>first heading</h1>
+    </div>
+    <script>
+        let heading = document.getElementsByTagName("h1");
+        console.log(heading);
+    </script>
+
+    <div>
+        <h1 class="message">Hello</h1>
+        <h1 class="message">Hello Hi</h1>
+        <div id="container">
+        <h1 class="message">Hello Hyy</h1>
+        <h1 class="message">Hello Hyyy!!</h1>
+        </div>
+    </div>
+    <script>
+        let cont = document.getElementById("container");
+        let messg = cont.getElementsByClassName("message");
+      console.log(messg);
+    </script>
+    <script>
+
+        let select = document.querySelector(".message");
+        console.log(select);
+    </script>
+    <script>
+        let select1 = document.querySelectorAll(".message");
+        console.log(select1);
+    </script>
+    <script>
+        let contt = document.getElementById("container");
+        let select2 = contt.querySelectorAll(".message");
+        console.log(select2);
+    </script>
+    <script>
+        let h = document.querySelectorAll("div, h1");
+        console.log(h);
+    </script>
+</body>
+</html>

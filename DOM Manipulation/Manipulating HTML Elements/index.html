@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!--CreateElement-->
+    <script>
+  let div = document.createElement("div");
+  div.innerHTML = "<p>Welcome to Html Elements</p>";
+  document.body.appendChild(div);
+  div.className="title";
+  console.log(div);
+    </script>
+
+    <!-- append child() -->
+    <ul id="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Blog</li>
+      <li>Project</li>
+    </ul>
+    <script>
+       let menu = document.getElementById("menu");
+
+       let list = document.createElement("li");
+       list.innerHTML = "Contact";
+
+       menu.appendChild(list);
+    </script>
+    <!-- text content -->
+     <ul id="text">
+      <li>Home</li>
+      <li>About</li>
+      <li style="display: none;">Blog</li>
+     </ul>
+     <script>
+      let text = document.getElementById("text");
+      menu.textContent = "Hello!!!"
+      //console.log(menu.textContent);
+      //console.log(menu.innerText); //only prints visible content
+     </script>
+
+     <!-- innerHtml -->
+      <script>
+        menu.innerHTML= "<h1>Hello!!!</h1>"; // print only the heading element
+      </script>
+<!-- after method -->
+      <script>
+          let menu = document.getElementById("menu");
+          menu.after(str1, str2);
+          menu.after(node1, node2);
+      </script>
+      <!--append method-->
+      <script>
+         let menu = document.getElementById("menu");
+         parentNode.append(newNodes);
+      </script>
+      <!--prepend method-->
+      <script>
+        let menu = document.getElementById("menu"); 
+        parentNode.prepend(newNodes);
+      </script>
+      <!--insertAdjacentHTML(positionName, text)-->
+
+      <script>
+        let menu1 = document.getElementById("menu");
+
+        menu1.insertAdjacentHTML("beforeend", "<li>Contact Me</li>");
+        menu1.insertAdjacentHTML("afterbegin", "<li>Contact Me</li>");
+      </script>
+      <!--replace child-->
+      <script>
+        let menu = document.getElementById("menu");
+
+        parentNode.replaceChild(newChild, oldChild);
+      </script>
+      <!--cloneNode() method-->
+      <script>
+        let menu = document.getElementById("menu");
+
+        let newNode = menu.cloneNode(false);
+        console.log(newNode);
+      </script>
+
+      <!-- remove child() method-->
+       <script>
+        let menu = document.getElementById("menu");
+
+        menu.removeChild(menu.lastElementChild);
+        menu,removeChild(menu.firstElementChild);
+       </script>
+
+       <!--insertBefore() method-->
+      <script>
+        let menu = document.getElementById("menu");
+        menu.insertBefore(newNode, existingNode);
+        menu.insertBefore(newNode, menu.firstElementChild);
+      </script>
+
+</body>
+</html>
